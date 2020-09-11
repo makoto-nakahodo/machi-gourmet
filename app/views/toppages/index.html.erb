@@ -1,0 +1,43 @@
+<div id="main">
+  <div class="container">
+    <div class="top-title">現在地から飲食店を見つけよう</div>
+    <div class="sub-title">-お気に入りを登録しよう-</div>
+    <div class="trial">
+      <%= link_to '試しに探してみる', searches_path, class: 'btn btn-info' %>
+    </div>
+    <div class="account">
+      <div>
+        <%= link_to '新規登録する', signup_path, class: 'btn btn-warning' %>
+      </div>
+      <div>
+        <%= link_to 'ログインする', login_path, class: 'btn btn-success' %>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="service">
+  <div class="service-page-header">service</div>
+  <div class="container">
+    <div class="service-title">自分の現在地周辺の飲食店を検索しよう。&thinsp;これでお店選びに困らない</div>
+    <div class="row">
+      <div class="col-md-4">
+        <img src="/assets//service-img01.jpg">
+        <div class="service-subtitle">ランダム・キーワード・カテゴリー検索</div>
+        <p>自分の現在地周辺の飲食店を検索しましょう。お気に入りのお店が見つかるかも。</p>
+      </div>
+      <div class="col-md-4">
+        <img src="/assets/service-img02.jpg">
+        <div class="service-subtitle">地図画面上をタップして検索</div>
+        <p>自分の現在地周辺の地図上をタップして、特定の地点から周辺のお店を検索しましょう。</p>
+      </div>
+      <div class="col-md-4">
+        <img src="/assets/service-img03.jpg">
+        <div class="service-subtitle">お気に入り登録</div>
+        <p>会員登録をして、気になったお店をお気に入りに登録しましょう。</p>
+      </div>
+    </div>
+    <div class="trial text-center mt-2">
+      <%= link_to '試しに探してみる', searches_path, class: 'btn btn-info btn-lg' %>
+    </div>
+  </div>
+</div>

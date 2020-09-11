@@ -1,0 +1,331 @@
+@charset "UTF-8";
+
+/*ナビゲーションバー用*/
+.navbar-custom {
+  padding: 0 1em;
+  font-family: "Nico Moji";
+  background-color: rgba(255,0,0,.8);
+}
+
+.navbar-brand {
+  font-size: 1.6rem;
+  font-weight: 800;
+}
+
+.navbar-nav {
+  font-size: 1.1rem;
+  font-weight: 900;
+}
+
+.dropdown-toggle {
+  font-size: 1rem;
+}
+
+.dropdown-menu {
+  min-width: 7rem;
+  background-color: rgba(255,0,0,.5);
+  border: none;
+}
+
+.dropdown-item {
+  font-size: .9rem;
+  font-weight: 900;
+  font-family: "M PLUS 1p";
+  color: #FFF;
+}
+
+/*トップページ用*/
+#main {
+  background-image: url("top-img.jpg");
+  background-position: center center;   
+  background-size: cover;  
+  height: 500px;
+}
+
+.top-title {
+  display: inline-block;
+  margin-top: 3em;
+  color: #FFF;
+  font-size: 1.4rem;
+  font-weight: 900;
+  font-family: "M PLUS 1p";
+  border-bottom: 3px solid #FF0;
+}
+
+.sub-title {
+  color: #FFF;
+  font-size: 1rem;
+  font-weight: 900;
+  font-family: "M PLUS 1p";
+}
+
+.trial {
+  margin-top: 1.5em;
+  margin-bottom: 3em;
+}
+
+.account div {
+  margin-top: 1.5em;
+}
+
+.service-page-header {
+  margin-bottom: .8em;
+  padding: .5em;
+  text-align: center;
+  font-size: 1.4rem;
+  font-family: "Nico Moji";
+  color: #474747;
+  background: whitesmoke;
+}
+
+.service-title {
+  padding: 0 1em;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 900;
+  font-family: "M PLUS 1p";
+  border-left: double 7px #28a745;
+  border-right: double 7px #28a745;
+}
+
+img {
+  margin-top: 1.8em;
+  margin-bottom: 1em;
+  width:auto;
+  height:auto;
+  max-width:100%;
+  max-height:100%;
+}
+
+.service-subtitle {
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 900;
+  font-family: "M PLUS 1p";
+  border-bottom: 4px solid #28a745;
+}
+
+.col-md-4 p {
+  margin-top: .5em;
+  font-size: .9rem;
+  font-family: 'Kosugi Maru', sans-serif;
+  color: #474747;
+}
+
+/*フッター用*/
+#footer {
+  text-align: center;
+  font-family: "Nico Moji";
+  background-color: rgba(255,0,0,.8);
+}
+
+.copyright {
+  padding: .3em 0;
+  color: #FFF;
+}
+
+/*新規登録ページ用*/
+.sign-page-head {
+  margin-top: 2em;
+  font-weight: 900;
+  font-family: "M PLUS 1p";
+  color: #474747;
+}
+
+
+/*submitボタン用*/
+input[type="submit"] {
+  margin-top: 1.7em;
+  margin-bottom: 1.7em;
+}
+
+/*グーグル地図,ぐるなび店舗表示ページ用*/ 
+.search-img {
+  background-image: url("search-img.jpg");
+  background-position: center center;   
+  background-size: cover;  
+}
+
+.search-page-header {
+  display: inline-block;
+  margin-top: 2.7em;
+  margin-bottom: .5em;
+  font-size: 1.6rem;
+  font-weight: 900;
+  font-family: 'Kosugi Maru', sans-serif;
+  color: #FFF;
+}
+
+.range-checkbox {
+  margin-left: .1em;
+  font-size: 1.1rem;
+  font-weight: 900;
+  font-family: 'Kosugi Maru', sans-serif;
+  color: #FFF;
+}
+
+.border-dashed {
+  border-bottom: 3px dashed #FFF;
+  margin-top: .4em;
+  margin-bottom: 2em;
+}
+
+.search-label {
+  margin-left: 1em;
+  padding-bottom: 0;
+  color:  #FFF;
+  border-bottom: 3px solid #FFC107;
+}
+
+.preference-checkbox {
+  margin-bottom: .8em;
+  font-size: .9rem;
+  font-family: 'Kosugi Maru', sans-serif;
+  color: #FFF;
+}
+
+.tap-header {
+  display: inline-block;
+  margin-bottom: 1em;
+  font-weight: 900;
+  font-family: 'Kosugi Maru', sans-serif;
+  color:  #FFF;
+  border-bottom: 3px solid #FFC107;
+}
+
+.loading-icon {
+  display: none;
+  font-size: 46px;
+  animation: spin 2s linear infinite;
+  color: #FFF;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#gmap {
+  margin: 2em auto 3em;
+  width: 100%;
+  max-width: 800px;
+  height: 350px;
+}
+
+#shop-list {
+  padding: 0;
+  width: 100%;
+}
+
+#trial-shop-list {
+  padding: 0;
+  width: 100%;
+}
+
+.each-shop {
+  margin-top: 2em;
+  background-color: rgba(255,255,255,.9);
+  border-radius: 5px;
+  box-shadow: 3px 3px 3px #474747;
+}
+
+.shop-link {
+  display: flex;
+  text-decoration: none;
+  color: #474747;
+}
+
+.shop-img {
+  width: 150px;
+  height: 150px;
+}
+
+span {
+  display: block;
+}
+
+.shop-content {
+  margin: 1em;
+}
+
+.shop-name {
+  margin-top: .5em;
+  margin-bottom: .5em;
+  font-weight: 600;
+  border-bottom: solid 1px #474747;
+}
+
+.shop-time {
+  margin-bottom: 1em;
+  font-size: .7rem;
+}
+
+.gurunavi-credit {
+  margin: 1.4em 0 3em 1em;
+}
+
+.back-to-top {
+  display: none;
+  position: fixed;
+  bottom: 4em;
+  right: .5em;
+  width: 40px;
+  height: 40px;
+  background-color: #FFF;
+  color: #333;
+  opacity: .6;
+  font-size: 1.6rem;
+  line-height: 40px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.back-to-top:hover {
+  opacity: 1;
+}
+
+/*お気に入り一覧ページ用*/
+.favorite-img {
+  background-image: url("favorite-img.jpg");
+  background-position: center center;   
+  background-size: cover;
+}
+
+.favorite-page-header{
+  display: inline-block;
+  margin-top: 2.7em;
+  margin-bottom: .6em;
+  padding: .25em;
+  font-size: 1.6rem;
+  font-weight: 900;
+  font-family: 'Kosugi Maru', sans-serif;
+  color: #FFF;
+  background-color: #FFC107;
+}
+
+#favorite-shop-list {
+  padding: 0;
+  width: 100%;
+}
+
+/*フラッシュメッセージ用*/
+.alert {
+  margin-bottom: 0;
+}
+
+/*ラベル,ボタン用*/
+label {
+  font-weight: 900;
+  font-family: 'Kosugi Maru', sans-serif;
+}
+
+.btn {
+  font-family: "M PLUS 1p";
+}
+
+/*ページネーション用*/
+.pagination li a {
+  border: none; 
+}
+  

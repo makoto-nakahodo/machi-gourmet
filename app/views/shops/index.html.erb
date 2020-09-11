@@ -1,0 +1,31 @@
+<div class="favorite-img">
+  <div class="container">
+    <div class="favorite-page-header">お気に入り店舗一覧</div>
+    <div>
+      <%= link_to '検索ページへ戻る', root_path, class: 'btn  btn-success btn-sm' %>
+    </div>
+    <div id="favorite-shop-list" class="row">
+    <% @shops.each do |shop| %>
+      <div class="each-shop col-md-5 offset-1">
+        <a href="<%= shop.url%>" class="shop-link" target="_blank">
+          <img class="shop-img" src="<%= shop.image_url %>" alt="店舗画像なし">
+          <span class="shop-content">
+            <span class="shop-name"><%= shop.name %></span>
+            <span class="shop-time">営業時間：<%= shop.opentime %></span>
+          </span>
+        </a>
+        <% if current_user == shop.user %>
+          <%= link_to 'お気に入りから削除する', shop, method: :delete, data: { confirm: "You sure?" }, class: 'btn btn-danger btn-sm' %>
+        <% end %>
+      </div>
+    <% end %>
+    </div>
+    <div class="mt-4">
+      <%= paginate @shops%>
+    </div>
+    <a href="https://api.gnavi.co.jp/api/scope/" target="_blank">
+      <img src="https://api.gnavi.co.jp/api/img/credit/api_265_65.gif" class="gurunavi-credit" width="265" height="65" border="0" alt="グルメ情報検索サイト　ぐるなび">
+    </a>
+  </div>
+</div>
+<a href="#" class="back-to-top">▲</a>

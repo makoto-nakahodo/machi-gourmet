@@ -1,0 +1,25 @@
+<header>
+  <nav class="navbar navbar-expand-sm navbar-dark navbar-custom fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="/" >まちグルメ</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <% if logged_in? %>
+            <li class="nav-item"><%= link_to 'お気に入り一覧', shops_path, class: 'nav-link' %></li>
+            <li class="nav-item"><%= link_to 'ログアウト', logout_path, method: :delete, class: 'nav-link' %></li>
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">退会メニュー</a>
+              <div class="dropdown-menu"><%= link_to '退会', user_path(current_user), method: :delete, data: { confirm: "You sure?" }, class: 'dropdown-item' %></div>
+            </li>
+          <% else %>
+            <li class="nav-item"><%= link_to '会員登録', signup_path, class: 'nav-link' %></li>
+            <li class="nav-item"><%= link_to 'ログイン', login_path, class: 'nav-link' %></li>
+          <% end %>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
